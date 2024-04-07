@@ -17,10 +17,10 @@ function NavMenuItem(props: NavMenuItemProps) {
 
   return (
     <Link href={href} className="h-full flex items-end" onClick={() => setClicked(true)}>
-      <h1 className={"group transition duration-500 first-letter:text-red-400 caret-transparent"}>
+      <text className={"group transition duration-500 first-letter:text-red-400 caret-transparent"}>
         {text}
         <span className={`block ${selected ? "max-w-full" : "max-w-0"} group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-400`}></span>
-      </h1>
+      </text>
     </Link>
   )
 }

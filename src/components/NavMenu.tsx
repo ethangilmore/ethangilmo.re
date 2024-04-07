@@ -4,8 +4,8 @@ import NavMenuItem from "@/components/NavMenuItem";
 
 function NavMenu() {
   return (
-      <div className="md:flex md:justify-between">
-        <h1 className="text-4xl text-center caret-transparent">Ethan Gilmore</h1>
+      <div className="md:flex md:justify-between mb-16">
+        <text className="text-4xl text-center caret-transparent">Ethan Gilmore</text>
         <div className="flex justify-evenly py-2 md:space-x-8 md:text-lg lg:space-x-16 lg:text-xl">
           <NavMenuItem text="~/" href="/"/>
           <NavMenuItem text="~/projects" href="/projects"/>

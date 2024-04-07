@@ -16,6 +16,10 @@
 /*   } */
 /* } */
 
+:root {
+  caret-color: theme('colors.transparent');
+}
+
 body {
   color: theme('colors.zinc.100');
   background: theme('colors.black');
