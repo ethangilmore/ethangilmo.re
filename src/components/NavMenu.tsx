@@ -3,9 +3,9 @@ import NavMenuItem from "@/components/NavMenuItem";
 
 function NavMenu() {
   return (
-      <div className="py-32 flex justify-around">
-        <h1 className="text-4xl caret-transparent">Ethan Gilmore</h1>
-        <div className="flex space-x-8 text-xl">
+      <div className="p-12 md:flex md:justify-around md:py-16 lg:py-32">
+        <h1 className="text-4xl text-center caret-transparent">Ethan Gilmore</h1>
+        <div className="flex justify-evenly py-2 md:space-x-8 md:text-lg lg:space-x-16 lg:text-xl">
           <NavMenuItem text="~/" href="/"/>
           <NavMenuItem text="~/projects" href="/projects"/>
           <NavMenuItem text="~/resume" href="/resume"/>

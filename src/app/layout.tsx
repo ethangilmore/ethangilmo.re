@@ -11,7 +11,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <NavMenu />
-        <TypingText text={"Coming Soon..."}/>
+        <div className="w-1/2 m-auto">
+          <TypingText text={"Coming Soon..."}/>
+        </div>
         <main>{children}</main>
       </body>
     </html>
