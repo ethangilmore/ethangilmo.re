@@ -1,13 +1,14 @@
 'use client';
 import React from "react";
 import Link from "next/link";
+import { Project } from "@/utilities/getProjects";
 
 interface ProjectPostProps {
-  post: any;
+  project: Project;
 }
 
 function ProjectPost(props: ProjectPostProps) {
-  const { post } = props;
+  const { project: post } = props;
   return (
     <Link href={post.slug} key={post.slug}>
       <div>
