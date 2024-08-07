@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { Project } from "@/utilities/getProjects";
+import IconLink from "@/components/IconLink";
 
 interface ProjectPostProps {
   project: Project;
@@ -10,14 +11,19 @@ interface ProjectPostProps {
 function ProjectPost(props: ProjectPostProps) {
   const { project: post } = props;
   return (
-    <Link href={post.slug} key={post.slug}>
-      <div>
-        <text className="text-4xl">{post.title}</text>
+    <div>
+      <div className="flex space-x-4">
+        <Link  href={post.slug} key={post.slug}>
+          <text className="text-4xl">{post.title}</text>
+        </Link>
+        <IconLink icon="/Github_white.svg" href={post.github} />
       </div>
-      <div className="mb-16">
-        <text>{post.description}</text>
+      <div className="mb-12">
+        <Link  href={post.slug} key={post.slug}>
+          <text className="bg-red-400">{post.description}</text>
+        </Link>
       </div>
-    </Link>
+    </div>
   )
 }
 

@@ -33,7 +33,7 @@ function TypingText(props: TypingTextProps) {
   }, []);
 
   return (
-    <div className="bg-neutral-950 border-white border p-2 m-auto rounded-lg caret-transparent">
+    <div className="border p-2 m-auto rounded-lg caret-transparent">
       <text className={className}>{'> '}{displayText}{cursorVisible && '█'}</text>
     </div>
   )
