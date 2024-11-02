@@ -16,7 +16,7 @@ function ProjectPost(props: ProjectPostProps) {
         <Link  href={post.slug} key={post.slug}>
           <text className="text-4xl">{post.title}</text>
         </Link>
-        <IconLink icon="/Github_white.svg" href={post.github} />
+        <IconLink icon="/ethangilmo.re/Github_white.svg" href={post.github} />
       </div>
       <div className="mb-12">
         <Link  href={post.slug} key={post.slug}>
