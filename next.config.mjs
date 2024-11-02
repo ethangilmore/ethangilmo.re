@@ -5,7 +5,6 @@ const withMDX = nextMDX();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: "/ethangilmo.re",
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   images: {
     unoptimized: true,
