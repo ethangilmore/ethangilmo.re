@@ -6,7 +6,7 @@ export default function Projects() {
   const projects = getProjects(path.join(process.cwd(), 'src', 'app', 'projects'));
   return (
     <div>
-      {projects.map(project => (
+      {projects.sort((a, b) => 0).map(project => (
         <ProjectPost project={project} key={project.slug}/>
       ))}
     </div>
