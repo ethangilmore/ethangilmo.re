@@ -17,8 +17,6 @@ function TypingText(props: TypingTextProps) {
     const interval = setInterval(() => {
       setDisplayText(text.slice(0, index));
       setIndex((prevIndex) => prevIndex + 1);
-      // setCursorVisible(displayText !== text);
-      // setFinished(displayText === text);
     }, 100);
 
     return () => clearInterval(interval);
@@ -33,7 +31,7 @@ function TypingText(props: TypingTextProps) {
   }, []);
 
   return (
-    <div className="border p-2 m-auto rounded-lg caret-transparent">
+    <div className="border border-zinc-950 dark:border-zinc-100 p-2 m-auto rounded-lg caret-transparent">
       <text className={className}>{'> '}{displayText}{cursorVisible && '█'}</text>
     </div>
   )
